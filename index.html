@@ -30,13 +30,13 @@
 	<script>
 		document.addEventListener("DOMContentLoaded", () => {
 			const box = document.getElementById("scrollbike");
-  		const maxX = window.innerWidth - box.offsetWidth;
+			const maxX = window.innerWidth - box.offsetWidth;
 
-  		window.addEventListener("scroll", () => {
-    		const scrollProgress = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-    		box.style.transform = `translateX(${scrollProgress * maxX}px)`;
-  		});
-  	})
+			window.addEventListener("scroll", () => {
+				const scrollProgress = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+				box.style.transform = `translateX(${scrollProgress * maxX}px)`;
+			});
+		})
 	</script>
 
 
@@ -46,7 +46,8 @@
 
 <body>
 	<div class="bike-wrapper">
-		<img id="scrollbike" class="bike" src="assets/images/bike.png" style="height: 5vh; width: auto; z-index: 400; border-radius: 0"></img>
+		<img id="scrollbike" class="bike" src="assets/images/bike.png"
+			style="height: 5vh; width: auto; z-index: 400; border-radius: 0"></img>
 	</div>
 
 	<section data-bs-version="5.1" class="menu menu2 cid-tJS6tZXiPa" once="menu" id="menu02-0">
@@ -167,8 +168,8 @@
 				<div class="item features-image col-12 col-md-6 col-lg-4">
 					<div class="item-wrapper">
 						<div class="item-img" style="margin-left:70px;">
-								<img src="assets/images/PARAB_TWINT.jpeg" alt="Donation QR Code"
-									style="height: 200px; width: 200px;">
+							<img src="assets/images/PARAB_TWINT.jpeg" alt="Donation QR Code"
+								style="height: 200px; width: 200px;">
 						</div>
 						<div class="item-content">
 							<h5 class="item-title mbr-fonts-style display-5">
@@ -176,11 +177,11 @@
 							</h5>
 
 							<p class="mbr-text mbr-fonts-style display-7">
-								Scan this QR code to support our association with a donation. <br />Thank you for your support!
+								Scan this QR code to support our association with a donation. <br />Thank you for your
+								support!
 
 							</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="assets/images/PARAB_TWINT.jpeg"
+							<div class="mbr-section-btn item-footer"><a href="assets/images/PARAB_TWINT.jpeg"
 									class="btn item-btn btn-success display-7" target="_blank">QR Code</a></div>
 						</div>
 					</div>
@@ -329,7 +330,8 @@
 
 							<p class="mbr-text mbr-fonts-style display-7"><br>
 							</p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.facebook.com/profile.php?id=100077474375828"
+							<div class="mbr-section-btn item-footer"><a
+									href="https://www.facebook.com/profile.php?id=100077474375828"
 									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
 						</div>
 					</div>
@@ -380,6 +382,24 @@
 
 							<p class="mbr-text mbr-fonts-style display-7"></p>
 							<div class="mbr-section-btn item-footer"><a href="https://www.alps.foundation/"
+									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item features-image col-12 col-md-6 col-lg-3 active">
+					<div class="item-wrapper">
+						<div class="item-img">
+							<img src="assets/images/logos/SPSN-Logo.png" alt="GAIAMEDIA" data-slide-to="0"
+								data-bs-slide-to="0">
+						</div>
+						<div class="item-content">
+							<h5 class="item-title mbr-fonts-style display-5"><strong>Swiss Psychedelic Student
+									Network</strong></h5>
+
+							<p class="mbr-text mbr-fonts-style display-7"></p>
+							<div class="mbr-section-btn item-footer"><a
+									href="https://www.alps.foundation/swiss-psychedelic-student-network"
 									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
 						</div>
 
