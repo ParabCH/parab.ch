@@ -23,6 +23,9 @@
   );
 }
 
+#scrollbike {
+  transition: transform 0.25s ease;
+}
 
 img:not(.bike),
 .card-wrap,
