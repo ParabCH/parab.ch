@@ -27,6 +27,17 @@
 	</noscript>
 	<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=dlXV4d">
 	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=dlXV4d" type="text/css">
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const box = document.getElementById("scrollbike");
+  		const maxX = window.innerWidth - box.offsetWidth;
+
+  		window.addEventListener("scroll", () => {
+    		const scrollProgress = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    		box.style.transform = `translateX(${scrollProgress * maxX}px)`;
+  		});
+  	})
+	</script>
 
 
 
@@ -34,6 +45,9 @@
 </head>
 
 <body>
+	<div class="bike-wrapper">
+		<img id="scrollbike" class="bike" src="assets/images/bike.png" style="height: 5vh; width: auto; z-index: 400; border-radius: 0"></img>
+	</div>
 
 	<section data-bs-version="5.1" class="menu menu2 cid-tJS6tZXiPa" once="menu" id="menu02-0">
 
