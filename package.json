@@ -1,0 +1,31 @@
+{
+  "name": "david_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrimVis/parab.ch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TrimVis/parab.ch/issues"
+  },
+  "homepage": "https://github.com/TrimVis/parab.ch#readme",
+  "devDependencies": {
+    "postcss": "^8.5.6",
+    "prettier": "^3.7.4",
+    "purgecss": "^7.0.2",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^39.0.1"
+  }
+}
