@@ -54,16 +54,22 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const box = document.getElementById("scrollbike");
-        const maxX = window.innerWidth - box.offsetWidth;
+        let maxX = window.innerWidth - box.offsetWidth;
         let lastScrollY = window.scrollY;
 
-        window.addEventListener("scroll", () => {
+        const onScroll = () => {
           const currentScrollY = window.scrollY;
           const dir = currentScrollY > lastScrollY ? 1 : -1;
           const scrollProgress =
             window.scrollY / (document.body.scrollHeight - window.innerHeight);
           box.style.transform = `translateX(${scrollProgress * maxX}px) scaleX(${dir})`;
           lastScrollY = currentScrollY;
+        }
+
+        window.addEventListener("scroll", onScroll);
+        window.addEventListener("resize", () => {
+          maxX = window.innerWidth - box.offsetWidth;
+          onScroll()
         });
       });
     </script>

@@ -10,6 +10,7 @@
   background: rgba(143, 224, 218, 0.4);
   backdrop-filter: blur(10px) saturate(1.2);
   padding-top: 2vh;
+  margin-top: -7vh;
 
   mask-image: linear-gradient(to top, black 60%, transparent 100%);
   -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
