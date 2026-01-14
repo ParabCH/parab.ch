@@ -1,190 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logos/PARAB-Logo.webp"
+      type="image/x-icon"
+    />
+    <meta name="description" content="" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<link rel="shortcut icon" href="assets/images/logos/PARAB-Logo.webp" type="image/x-icon">
-	<meta name="description" content="">
+    <title>
+      PARAB - Psychedelic Awareness &amp; Research Association Basel
+    </title>
+    <link
+      rel="stylesheet"
+      href="assets/web/assets/mobirise-icons2/mobirise2.css"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/animatecss/animate.css" />
+    <link rel="stylesheet" href="assets/dropdown/css/style.css" />
+    <link rel="stylesheet" href="assets/socicon/css/styles.css" />
+    <link rel="stylesheet" href="assets/theme/css/style.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="assets/mobirise/css/mbr-additional.css?v=dlXV4d"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/mobirise/css/mbr-additional.css?v=dlXV4d"
+      type="text/css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const box = document.getElementById("scrollbike");
+        const maxX = window.innerWidth - box.offsetWidth;
+        let lastScrollY = window.scrollY;
 
+        window.addEventListener("scroll", () => {
+          const currentScrollY = window.scrollY;
+          const dir = currentScrollY > lastScrollY ? 1 : -1;
+          const scrollProgress =
+            window.scrollY / (document.body.scrollHeight - window.innerHeight);
+          box.style.transform = `translateX(${scrollProgress * maxX}px) scaleX(${dir})`;
+          lastScrollY = currentScrollY;
+        });
+      });
+    </script>
+  </head>
 
-	<title>PARAB - Psychedelic Awareness &amp; Research Association Basel</title>
-	<link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/animatecss/animate.css">
-	<link rel="stylesheet" href="assets/dropdown/css/style.css">
-	<link rel="stylesheet" href="assets/socicon/css/styles.css">
-	<link rel="stylesheet" href="assets/theme/css/style.css">
-	<link rel="preload"
-		href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
-		as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
-	</noscript>
-	<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=dlXV4d">
-	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=dlXV4d" type="text/css">
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			const box = document.getElementById("scrollbike");
-			const maxX = window.innerWidth - box.offsetWidth;
-			let lastScrollY = window.scrollY;
+  <body>
+    <div class="bike-wrapper">
+      <img
+        id="scrollbike"
+        class="bike"
+        src="assets/images/bike.webp"
+        style="height: 5vh; width: auto; z-index: 400; border-radius: 0"
+      />
+    </div>
 
-			window.addEventListener("scroll", () => {
-				const currentScrollY = window.scrollY;
-				const dir = currentScrollY > lastScrollY ? 1 : -1;
-				const scrollProgress = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-				box.style.transform = `translateX(${scrollProgress * maxX}px) scaleX(${dir})`;
-				lastScrollY = currentScrollY;
-			});
-		})
-	</script>
-</head>
+    <section
+      data-bs-version="5.1"
+      class="menu menu2 cid-tJS6tZXiPa"
+      once="menu"
+      id="menu02-0"
+    >
+      <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-logo">
+              <a href="https://parab.ch">
+                <img
+                  src="assets/images/logos/PARAB-Logo.webp"
+                  alt=""
+                  style="height: 3rem; width: 3rem"
+                />
+              </a>
+            </span>
+            <span class="navbar-caption-wrap"
+              ><a
+                class="navbar-caption text-black text-primary display-4"
+                href="index.html#header05-1"
+                >Psychedelic Awareness &amp; Research Association Basel</a
+              ></span
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-bs-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black text-primary display-4"
+                  href="index.html#header01-7"
+                  >Newsletter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black text-primary display-4"
+                  href="index.html#features04-w"
+                  >SPSN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black text-primary display-4"
+                  href="index.html#footer03-8"
+                  >Socials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black text-primary display-4"
+                  href="index.html#form02-6"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-<body>
-	<div class="bike-wrapper">
-		<img id="scrollbike" class="bike" src="assets/images/bike.webp"
-			style="height: 5vh; width: auto; z-index: 400; border-radius: 0"></img>
-	</div>
+    <section
+      data-bs-version="5.1"
+      class="header5 cid-tJS6uM4N87"
+      id="header05-1"
+    >
+      <div
+        class="align-center container"
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div class="row justify-content-center" style="min-width: 60%">
+          <div class="col-md-12 col-lg-9">
+            <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1">
+              <strong>Welcome!</strong>
+            </h1>
+            <p class="mbr-text mbr-fonts-style mb-4 display-7">
+              <strong
+                >&nbsp;We are the Psychedelic Awareness &amp; Research
+                Association Basel, short PARAB.<br
+              /></strong>
+              We are a multidisciplinary student organization with a mission to
+              advance knowledge about the therapeutic use of psychedelics.<br />
+              We inform professionals as well as the public and support the
+              building of a community around evidence-based psychedelic research
+              and therapy.<br />
+              Doing so, we pave the way for helpful psychedelic experiences in a
+              safe, legal, and accessible manner.<br />
+              Here you find notifications of future events, past recordings,
+              research updates, and further interesting information.<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section data-bs-version="5.1" class="menu menu2 cid-tJS6tZXiPa" once="menu" id="menu02-0">
+    <section
+      data-bs-version="5.1"
+      class="features4 cid-v1OgQbwfg8"
+      id="features04-1k"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h5
+                class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"
+              ></h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img src="assets/images/event.webp" alt="Events Logo" />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Upcoming events</strong>
+                </h5>
 
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Upcoming events hosted by PARAB or associated organizations in
+                  the Basel area
+                </p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.instagram.com/psychedelicassociationbasel/"
+                    class="btn item-btn btn-success display-7"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img src="assets/images/logos/PARAB-Logo.webp" alt="" />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Recordings of events&nbsp;</strong>
+                </h5>
 
-		<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-			<div class="container">
-				<div class="navbar-brand">
-					<span class="navbar-logo">
-						<a href="https://parab.ch">
-							<img src="assets/images/logos/PARAB-Logo.webp" alt=""
-								style="height: 3rem; width: 3rem;">
-						</a>
-					</span>
-					<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4"
-							href="index.html#header05-1">Psychedelic Awareness &amp; Research Association
-							Basel</a></span>
-				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
-					data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<div class="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-						<li class="nav-item"><a class="nav-link link text-black text-primary display-4"
-								href="index.html#header01-7">Newsletter</a></li>
-						<li class="nav-item"><a class="nav-link link text-black text-primary display-4"
-								href="index.html#features04-w">SPSN</a></li>
-						<li class="nav-item"><a class="nav-link link text-black text-primary display-4"
-								href="index.html#footer03-8">Socials</a></li>
-						<li class="nav-item"><a class="nav-link link text-black text-primary display-4"
-								href="index.html#form02-6">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</section>
+                <p class="mbr-text mbr-fonts-style display-7">
+                  You missed an event?<br />You find all recorded events on
+                  Youtube
+                </p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLVSY7PHcjj3ZiUfokFtpoQEWbiYIj5s8G"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img" style="margin-left: 70px">
+                <img
+                  src="assets/images/PARAB_TWINT.jpeg"
+                  alt="Donation QR Code"
+                  style="height: 200px; width: 200px"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Support Us!&nbsp;</strong>
+                </h5>
 
-	<section data-bs-version="5.1" class="header5 cid-tJS6uM4N87" id="header05-1">
-		<div class="align-center container"
-			style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-			<div class="row justify-content-center" style="min-width: 60%;">
-				<div class="col-md-12 col-lg-9">
-					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-1"><strong>Welcome!</strong></h1>
-					<p class="mbr-text mbr-fonts-style mb-4 display-7"><strong>&nbsp;We are the Psychedelic Awareness
-							&amp; Research Association Basel, short PARAB.<br></strong>
-						We are a multidisciplinary student organization with a mission to advance knowledge about
-						the therapeutic use of psychedelics.<br>
-						We inform professionals as well as the public and support the building of a community around
-						evidence-based psychedelic research and therapy.<br>
-						Doing so, we pave the way for helpful psychedelic experiences in a safe, legal, and
-						accessible manner.<br>
-						Here you find notifications of future events, past recordings, research updates, and further
-						interesting information.<br>
-				</div>
-			</div>
-			<!--<img style="min-width: 40%; height: auto; object-fit: cover;"
-				src="assets/images/parab.webp"
-				alt="Parab Logo" title="">
-		</div>-->
-	</section>
-
-	<section data-bs-version="5.1" class="features4 cid-v1OgQbwfg8" id="features04-1k">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 content-head">
-					<div class="mbr-section-head mb-5">
-						<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"></h5>
-
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/event.webp"
-								alt="Events Logo">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5">
-								<strong>Upcoming events</strong>
-							</h5>
-
-							<p class="mbr-text mbr-fonts-style display-7">Upcoming events hosted by PARAB or associated
-								organizations in the Basel area</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.instagram.com/psychedelicassociationbasel/"
-									class="btn item-btn btn-success display-7">Learn more</a></div>
-						</div>
-
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/PARAB-Logo.webp" alt="">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5">
-								<strong>Recordings of events&nbsp;</strong>
-							</h5>
-
-							<p class="mbr-text mbr-fonts-style display-7">
-								You missed an event?<br>You find all recorded events on Youtube</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.youtube.com/playlist?list=PLVSY7PHcjj3ZiUfokFtpoQEWbiYIj5s8G"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img" style="margin-left:70px;">
-							<img src="assets/images/PARAB_TWINT.jpeg" alt="Donation QR Code"
-								style="height: 200px; width: 200px;">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5">
-								<strong>Support Us!&nbsp;</strong>
-							</h5>
-
-							<p class="mbr-text mbr-fonts-style display-7">
-								Scan this QR code to support our association with a donation. <br />Thank you for your
-								support!
-
-							</p>
-							<div class="mbr-section-btn item-footer"><a href="assets/images/PARAB_TWINT.jpeg"
-									class="btn item-btn btn-success display-7" target="_blank">QR Code</a></div>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="item features-image col-12 col-md-6 col-lg-4">
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Scan this QR code to support our association with a donation.
+                  <br />Thank you for your support!
+                </p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="assets/images/PARAB_TWINT.jpeg"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >QR Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="item features-image col-12 col-md-6 col-lg-4">
 					<div class="item-wrapper">
 						<div class="item-img">
 							<img src="assets/images/gallery02.jpg" alt="">
@@ -200,443 +308,676 @@
 						</div>
 					</div>
 				</div> -->
-			</div>
-		</div>
-	</section>
+        </div>
+      </div>
+    </section>
 
-	<section data-bs-version="5.1" class="header1 cid-tJS9vXDdRK" id="header01-7">
+    <section
+      data-bs-version="5.1"
+      class="header1 cid-tJS9vXDdRK"
+      id="header01-7"
+    >
+      <section
+        data-bs-version="5.1"
+        class="features4 cid-v1OgQbwfg8"
+        id="features04-1k"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 content-head">
+              <div class="mbr-section-head mb-5">
+                <h5
+                  class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"
+                ></h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row justify-content-center">
+              <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                  <h4
+                    class="mbr-section-title mbr-fonts-style align-center mb-0 display-6"
+                  >
+                    <strong>Talk Recap</strong>
+                  </h4>
+                </div>
+              </div>
+            </div>
 
-		<section data-bs-version="5.1" class="features4 cid-v1OgQbwfg8" id="features04-1k">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 content-head">
-					<div class="mbr-section-head mb-5">
-						<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"></h5>
+            <div class="item features-image col-12 col-md-6 col-lg-4">
+              <div class="item-wrapper">
+                <div class="item-img">
+                  <img
+                    src="assets/images/Talks/Talk Recap 04.11.25.png"
+                    alt="Events Logo"
+                  />
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5">
+                    <strong>Talk Recap 04.11.2025</strong>
+                  </h5>
+                  <p class="mbr-text mbr-fonts-style display-7">
+                    Clinical Studies with LSD, Psilocybin and MDMA in Basel by
+                    PD Dr. med. Felix Müller
+                  </p>
+                  <div class="mbr-section-btn item-footer">
+                    <a
+                      href="https://www.linkedin.com/pulse/talk-recap-clinical-studies-lsd-psilocybin-mdma-basel-pd-dr-med-kmkie/?trackingId=tpqItAQy4nAhLbJLQjyuxQ%3D%3D"
+                      class="btn item-btn btn-success display-7"
+                      >Full article</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-4">
+              <div class="item-wrapper">
+                <div class="item-img">
+                  <img
+                    src="assets/images/Talks/Talk Recap 21.10.25.png"
+                    alt="Events Logo"
+                  />
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5">
+                    <strong>Talk Recap 21.10.2025</strong>
+                  </h5>
 
-					</div>
-				</div>
-			</div>
-			<div class="row">
+                  <p class="mbr-text mbr-fonts-style display-7">
+                    Rewriting the Psychedelic Story by PhD cand. David Elmiger
+                  </p>
+                  <div class="mbr-section-btn item-footer">
+                    <a
+                      href="https://www.linkedin.com/pulse/talk-recap-rewriting-psychedelic-story-phd-cand-david-elmiger-parab-br46f/?trackingId=nN96rJwXbU%2BFWqtM1ICdpw%3D%3D"
+                      class="btn item-btn btn-success display-7"
+                      >Full article</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-4">
+              <div class="item-wrapper">
+                <div class="item-img">
+                  <img
+                    src="assets/images/Talks/Talk Recap 06.10.25.png"
+                    alt="Events Logo"
+                  />
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5">
+                    <strong>Talk Recap 06.10.2025</strong>
+                  </h5>
 
+                  <p class="mbr-text mbr-fonts-style display-7">
+                    A Superficial Deep Dive into Psychedelic Research by PhD
+                    cand. Morten Lietz
+                  </p>
+                  <div class="mbr-section-btn item-footer">
+                    <a
+                      href="https://www.linkedin.com/pulse/talk-recap-superficial-deep-dive-psychedelic-research-phd-cand-morten-zxspf/?trackingId=q%2FhqP5UVXv3Dk60Im4IlWw%3D%3D"
+                      class="btn item-btn btn-success display-7"
+                      >Full article</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="row justify-content-center">
-				<div class="col-12 content-head">
-					<div class="mbr-section-head mb-5">
-						<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-6"><strong>Talk Recap</strong></h4>
-					</div>
-				</div>
-			</div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-7 image-wrapper">
+            <img
+              class="w-100"
+              src="assets/images/logos/SPSN-Logo.webp"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-lg col-md-12">
+            <div class="text-wrapper align-left">
+              <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                <strong>SPSN Newsletter</strong>
+              </h1>
+              <p class="mbr-text mbr-fonts-style mb-4 display-7">
+                The SPSN is a collaboration of all Swiss student associations
+                dedicated to psychedelic research. Stay up to date witth our
+                latest events and projects around psychedelic research and
+                therapy. We're happy to have you join our community! Thank you
+                for signing up. We're excited to keep you updated. 🌱
+              </p>
+              <div class="mbr-section-btn mt-3">
+                <a
+                  class="btn btn-primary display-7"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfq4-6Oj135oFY3Z0-PRK89l8md0DXiYcpADlZ9pBHGTaPdIQ/viewform"
+                  target="_blank"
+                  >Join&nbsp;SPSN Newsletter</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section
+      data-bs-version="5.1"
+      class="features4 cid-tMlEXTHLbS"
+      id="features04-w"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h4
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-6"
+              >
+                <strong
+                  >Other members of the Swiss Psychedelic Student
+                  Network</strong
+                >
+              </h4>
+              <h5
+                class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"
+              ></h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item features-image col-12 col-md-6 col-lg-4 active">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/PROZ-Logo.webp"
+                  alt=""
+                  data-slide-to="0"
+                  data-bs-slide-to="0"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Psychedelic Research Organization of Zurich</strong>
+                </h5>
 
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.psychedelicresearchzurich.ch/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/ARP-Logo.webp"
+                  alt=""
+                  data-slide-to="1"
+                  data-bs-slide-to="1"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong
+                    >Association pour la Recherche sur les Psychédéliques de
+                    l'Université de Genève&nbsp;</strong
+                  >
+                </h5>
 
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/Talks/Talk Recap 04.11.25.png"
-								alt="Events Logo">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5">
-								<strong>Talk Recap 04.11.2025</strong>
-							</h5>
-							<p class="mbr-text mbr-fonts-style display-7">Clinical Studies with LSD, Psilocybin and MDMA in Basel by PD Dr. med. Felix Müller</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.linkedin.com/pulse/talk-recap-clinical-studies-lsd-psilocybin-mdma-basel-pd-dr-med-kmkie/?trackingId=tpqItAQy4nAhLbJLQjyuxQ%3D%3D"
-									class="btn item-btn btn-success display-7">Full article</a></div>
-						</div>
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.facebook.com/ARPUNIGE"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/Talks/Talk Recap 21.10.25.png"
-								alt="Events Logo">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5">
-								<strong>Talk Recap 21.10.2025</strong>
-							</h5>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/PROOF-Logo.webp"
+                  alt=""
+                  data-slide-to="2"
+                  data-bs-slide-to="2"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Psychedelic Research Organization of Fribourg</strong>
+                </h5>
 
-							<p class="mbr-text mbr-fonts-style display-7">Rewriting the Psychedelic Story by PhD cand. David Elmiger</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.linkedin.com/pulse/talk-recap-rewriting-psychedelic-story-phd-cand-david-elmiger-parab-br46f/?trackingId=nN96rJwXbU%2BFWqtM1ICdpw%3D%3D"
-									class="btn item-btn btn-success display-7">Full article</a></div>
-						</div>
+                <p class="mbr-text mbr-fonts-style display-7"><br /></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.psychedelicfribourg.ch/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/PROBe-Logo.webp"
+                  alt=""
+                  data-slide-to="3"
+                  data-bs-slide-to="3"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Psychedelic Research Organization Of Bern</strong>
+                </h5>
 
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/Talks/Talk Recap 06.10.25.png"
-								alt="Events Logo">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5">
-								<strong>Talk Recap 06.10.2025</strong>
-							</h5>
+                <p class="mbr-text mbr-fonts-style display-7"><br /></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://linktr.ee/psychedelicresearch"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/NAPA-Logo.webp"
+                  alt=""
+                  data-slide-to="4"
+                  data-bs-slide-to="4"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong
+                    >Neuchâtel Association for Psychedelic Awareness</strong
+                  >
+                </h5>
 
-							<p class="mbr-text mbr-fonts-style display-7">A Superficial Deep Dive into Psychedelic Research by PhD cand. Morten Lietz</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.linkedin.com/pulse/talk-recap-superficial-deep-dive-psychedelic-research-phd-cand-morten-zxspf/?trackingId=q%2FhqP5UVXv3Dk60Im4IlWw%3D%3D"
-									class="btn item-btn btn-success display-7">Full article</a></div>
-						</div>
+                <p class="mbr-text mbr-fonts-style display-7"><br /></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100077474375828"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/PALA-Logo.webp"
+                  alt=""
+                  data-slide-to="5"
+                  data-bs-slide-to="5"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong
+                    >Psychedelic Association of Lausanne for Awareness</strong
+                  >
+                </h5>
 
-					</div>
-				</div>
-			</div>
-		</div>
-		</section>
+                <p class="mbr-text mbr-fonts-style display-7"><br /></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.pala-lausanne.org/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section
+      data-bs-version="5.1"
+      class="features4 cid-v1Ol43bd9o"
+      id="features04-1l"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h4
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-6"
+              >
+                <strong>Related Organizations</strong>
+              </h4>
+            </div>
+          </div>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h4
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+              ></h4>
+              <h5
+                class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"
+              ></h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item features-image col-12 col-md-6 col-lg-4 active">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/ALPS-Logo.webp"
+                  alt=""
+                  data-slide-to="0"
+                  data-bs-slide-to="0"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>ALPS Foundation</strong>
+                </h5>
 
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.alps.foundation/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4 active">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/SPSN-Logo.webp"
+                  alt="GAIAMEDIA"
+                  data-slide-to="0"
+                  data-bs-slide-to="0"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Swiss Psychedelic Student Network</strong>
+                </h5>
 
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 col-md-12 col-lg-7 image-wrapper">
-					<img class="w-100" src="assets/images/logos/SPSN-Logo.webp" alt="">
-				</div>
-				<div class="col-12 col-lg col-md-12">
-					<div class="text-wrapper align-left">
-						<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>SPSN Newsletter</strong>
-						</h1>
-						<p class="mbr-text mbr-fonts-style mb-4 display-7">
-							The SPSN is a collaboration of all Swiss student associations dedicated to psychedelic
-							research. Stay up to date witth our latest events and projects around psychedelic research
-							and therapy. We're happy to have you join our community! Thank you for signing up. We're
-							excited to keep you updated. 🌱</p>
-						<div class="mbr-section-btn mt-3"><a class="btn btn-primary display-7"
-								href="https://docs.google.com/forms/d/e/1FAIpQLSfq4-6Oj135oFY3Z0-PRK89l8md0DXiYcpADlZ9pBHGTaPdIQ/viewform"
-								target="_blank">Join&nbsp;SPSN Newsletter</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.alps.foundation/swiss-psychedelic-student-network"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/Eleusis-Logo.webp"
+                  alt=""
+                  data-slide-to="1"
+                  data-bs-slide-to="1"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>Eleusis-Society</strong>
+                </h5>
 
-	<section data-bs-version="5.1" class="features4 cid-tMlEXTHLbS" id="features04-w">
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://eleusis-society.ch/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4 active">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/GAIAMEDIA.webp"
+                  alt="GAIAMEDIA"
+                  data-slide-to="0"
+                  data-bs-slide-to="0"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>gaiamedia</strong>
+                </h5>
 
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://www.gaiamedia.org/deutsch/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-4 active">
+            <div class="item-wrapper">
+              <div class="item-img">
+                <img
+                  src="assets/images/logos/SAPT.webp"
+                  alt="GAIAMEDIA"
+                  data-slide-to="0"
+                  data-bs-slide-to="0"
+                />
+              </div>
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5">
+                  <strong>SÄPT</strong>
+                </h5>
 
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 content-head">
-					<div class="mbr-section-head mb-5">
-						<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-6"><strong>Other members of the
-								Swiss Psychedelic Student Network</strong></h4>
-						<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"></h5>
+                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href="https://saept.ch/"
+                    class="btn item-btn btn-success display-7"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="item features-image col-12 col-md-6 col-lg-4 active">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/PROZ-Logo.webp" alt=""
-								data-slide-to="0" data-bs-slide-to="0">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Psychedelic Research Organization
-									of Zurich</strong></h5>
+    <section data-bs-version="5.1" class="form5 cid-tJS9pBcTSa" id="form02-6">
+      <div class="container">
+        <div class="mbr-section-head mb-5">
+          <h3
+            class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+          >
+            <strong>Contact Us!</strong>
+          </h3>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="mbr-form form-with-styler"
+              data-form-title="Contact Form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="662cb965-265d-4e02-bc89-75dc99c39451"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="Psychedelic Awareness & Research Association Basel Contact"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Parab.ch Contact Form"
+              />
 
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.psychedelicresearchzurich.ch/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
+              <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  data-form-field="name"
+                  class="form-control"
+                  id="name-form02-6"
+                />
+              </div>
+              <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  data-form-field="email"
+                  class="form-control"
+                  id="email-form02-6"
+                />
+              </div>
+              <div class="col-12 form-group mb-3" data-for="phone">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  data-form-field="phone"
+                  class="form-control"
+                  id="phone-form02-6"
+                />
+              </div>
+              <div class="col-12 form-group mb-3" data-for="textarea">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  data-form-field="textarea"
+                  class="form-control"
+                  id="textarea-form02-6"
+                ></textarea>
+              </div>
+              <div
+                class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"
+              >
+                <button type="submit" class="btn btn-success display-7">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/ARP-Logo.webp" alt=""
-								data-slide-to="1" data-bs-slide-to="1">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Association pour la Recherche sur
-									les Psychédéliques de l'Université de Genève&nbsp;</strong></h5>
+    <section
+      data-bs-version="5.1"
+      class="footer1 programm5 cid-tJS9NNcTLZ"
+      once="footers"
+      id="footer03-8"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="row-links mb-4">
+            <ul class="header-menu">
+              <li class="header-menu-item mbr-fonts-style display-5"></li>
+              <li class="header-menu-item mbr-fonts-style display-5"></li>
+              <li class="header-menu-item mbr-fonts-style display-5"></li>
+              <li class="header-menu-item mbr-fonts-style display-5"></li>
+            </ul>
+          </div>
 
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.facebook.com/ARPUNIGE"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
+          <div class="col-12">
+            <div class="social-row">
+              <div class="soc-item">
+                <a href="https://ch.linkedin.com/company/parab" target="_blank">
+                  <span
+                    class="mbr-iconfont socicon socicon-linkedin display-7"
+                  ></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a
+                  href="https://chat.whatsapp.com/GlBdeg5byz02DUl6QiAIwU?mode=ems_copy_t"
+                  target="_blank"
+                >
+                  <span class="mbr-iconfont socicon-whatsapp socicon"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a
+                  href="https://www.instagram.com/psychedelicassociationbasel/"
+                  target="_blank"
+                >
+                  <span class="mbr-iconfont socicon-instagram socicon"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLVSY7PHcjj3ZiUfokFtpoQEWbiYIj5s8G"
+                  target="_blank"
+                >
+                  <span class="mbr-iconfont socicon-youtube socicon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <p class="mbr-fonts-style copyright display-7" style="color: black">
+              © Copyright 2026 Psychedelic Awareness &amp; Research Association
+              Basel
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/PROOF-Logo.webp" alt=""
-								data-slide-to="2" data-bs-slide-to="2">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Psychedelic Research Organization
-									of Fribourg</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"><br>
-							</p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.psychedelicfribourg.ch/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/PROBe-Logo.webp" alt=""
-								data-slide-to="3" data-bs-slide-to="3">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Psychedelic Research Organization
-									Of Bern</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"><br>
-							</p>
-							<div class="mbr-section-btn item-footer"><a href="https://linktr.ee/psychedelicresearch"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/NAPA-Logo.webp" alt=""
-								data-slide-to="4" data-bs-slide-to="4">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Neuchâtel Association for
-									Psychedelic Awareness</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"><br>
-							</p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.facebook.com/profile.php?id=100077474375828"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/PALA-Logo.webp" alt=""
-								data-slide-to="5" data-bs-slide-to="5">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Psychedelic Association of Lausanne
-									for Awareness</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"><br>
-							</p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.pala-lausanne.org/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section data-bs-version="5.1" class="features4 cid-v1Ol43bd9o" id="features04-1l">
-
-
-		<div class="container">
-
-<div class="row justify-content-center">
-				<div class="col-12 content-head">
-					<div class="mbr-section-head mb-5">
-						<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-6"><strong>Related Organizations</strong></h4>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="row justify-content-center">
-				<div class="col-12 content-head">
-					<div class="mbr-section-head mb-5">
-						<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"></h4>
-						<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"></h5>
-
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="item features-image col-12 col-md-6 col-lg-4 active">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/ALPS-Logo.webp" alt="" data-slide-to="0"
-								data-bs-slide-to="0">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>ALPS Foundation</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.alps.foundation/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4 active">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/SPSN-Logo.webp" alt="GAIAMEDIA" data-slide-to="0"
-								data-bs-slide-to="0">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Swiss Psychedelic Student
-									Network</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a
-									href="https://www.alps.foundation/swiss-psychedelic-student-network"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/Eleusis-Logo.webp" alt=""
-								data-slide-to="1" data-bs-slide-to="1">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>Eleusis-Society</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a href="https://eleusis-society.ch/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4 active">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/GAIAMEDIA.webp" alt="GAIAMEDIA" data-slide-to="0"
-								data-bs-slide-to="0">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>gaiamedia</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a href="https://www.gaiamedia.org/deutsch/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-
-					</div>
-				</div>
-				<div class="item features-image col-12 col-md-6 col-lg-4 active">
-					<div class="item-wrapper">
-						<div class="item-img">
-							<img src="assets/images/logos/SAPT.webp" alt="GAIAMEDIA" data-slide-to="0"
-								data-bs-slide-to="0">
-						</div>
-						<div class="item-content">
-							<h5 class="item-title mbr-fonts-style display-5"><strong>SÄPT</strong></h5>
-
-							<p class="mbr-text mbr-fonts-style display-7"></p>
-							<div class="mbr-section-btn item-footer"><a href="https://saept.ch/"
-									class="btn item-btn btn-success display-7" target="_blank">Learn more</a></div>
-						</div>
-
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-	</section>
-
-	<section data-bs-version="5.1" class="form5 cid-tJS9pBcTSa" id="form02-6">
-		<div class="container">
-			<div class="mbr-section-head mb-5">
-				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-					<strong>Contact Us!</strong>
-				</h3>
-			</div>
-			<div class="row justify-content-center mt-4">
-				<div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-					<form action="https://api.web3forms.com/submit" method="POST" class="mbr-form form-with-styler"
-						data-form-title="Contact Form">
-						<input type="hidden" name="access_key" value="662cb965-265d-4e02-bc89-75dc99c39451">
-						<input type="hidden" name="subject"
-							value="Psychedelic Awareness & Research Association Basel Contact">
-						<input type="hidden" name="from_name" value="Parab.ch Contact Form">
-
-						<div class="col-md col-sm-12 form-group mb-3" data-for="name">
-							<input type="text" name="name" placeholder="Name" data-form-field="name"
-								class="form-control" id="name-form02-6">
-						</div>
-						<div class="col-md col-sm-12 form-group mb-3" data-for="email">
-							<input type="email" name="email" placeholder="Email" data-form-field="email"
-								class="form-control" id="email-form02-6">
-						</div>
-						<div class="col-12 form-group mb-3" data-for="phone">
-							<input type="tel" name="phone" placeholder="Phone" data-form-field="phone"
-								class="form-control" id="phone-form02-6">
-						</div>
-						<div class="col-12 form-group mb-3" data-for="textarea">
-							<textarea name="message" placeholder="Message" data-form-field="textarea"
-								class="form-control" id="textarea-form02-6"></textarea>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
-							<button type="submit" class="btn btn-success display-7">Send message</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section data-bs-version="5.1" class="footer1 programm5 cid-tJS9NNcTLZ" once="footers" id="footer03-8">
-		<div class="container">
-			<div class="row">
-				<div class="row-links mb-4">
-					<ul class="header-menu">
-						<li class="header-menu-item mbr-fonts-style display-5"></li>
-						<li class="header-menu-item mbr-fonts-style display-5"></li>
-						<li class="header-menu-item mbr-fonts-style display-5"></li>
-						<li class="header-menu-item mbr-fonts-style display-5"></li>
-					</ul>
-				</div>
-
-				<div class="col-12">
-					<div class="social-row">
-						<div class="soc-item">
-							<a href="https://ch.linkedin.com/company/parab" target="_blank">
-								<span class="mbr-iconfont socicon socicon-linkedin display-7"></span>
-							</a>
-						</div>
-						<div class="soc-item">
-							<a href="https://chat.whatsapp.com/GlBdeg5byz02DUl6QiAIwU?mode=ems_copy_t" target="_blank">
-								<span class="mbr-iconfont socicon-whatsapp socicon"></span>
-							</a>
-						</div>
-						<div class="soc-item">
-							<a href="https://www.instagram.com/psychedelicassociationbasel/" target="_blank">
-								<span class="mbr-iconfont socicon-instagram socicon"></span>
-							</a>
-						</div>
-						<div class="soc-item">
-							<a href="https://www.youtube.com/playlist?list=PLVSY7PHcjj3ZiUfokFtpoQEWbiYIj5s8G"
-								target="_blank">
-								<span class="mbr-iconfont socicon-youtube socicon"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 mt-5">
-					<p class="mbr-fonts-style copyright display-7" style="color: black;">
-						© Copyright 2026 Psychedelic Awareness &amp; Research Association Basel
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<input name="animation" type="hidden">
-</body>
-
+    <input name="animation" type="hidden" />
+  </body>
 </html>
