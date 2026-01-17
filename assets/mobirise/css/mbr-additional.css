@@ -5,6 +5,17 @@
 .sectionbg:nth-of-type(even) {
   background: rgba(143, 224, 218) !important;
 }
+/* Wave separator 
+.sectionbg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 80px;
+  background-repeat: repeat-x;
+  background-size: 400px 80px;
+}*/
 .sectionbg:nth-of-type(odd) {
     background: rgb(255, 163, 174) !important;
 
