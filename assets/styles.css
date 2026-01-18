@@ -1,0 +1,84 @@
+
+.sectionbg:nth-of-type(even) {
+  background: rgba(143, 224, 218) !important;
+}
+
+.sectionbg:nth-of-type(odd) {
+    background: rgb(255, 163, 174) !important;
+
+}
+.sectionbg {
+    padding: 120px 0 !important;
+}
+
+.bike-wrapper {
+  position: sticky;
+  height: 7vh;
+  top: 93vh;
+  z-index: 4;
+  background: rgba(143, 224, 218, 0.4);
+     
+  backdrop-filter: blur(10px) saturate(1.2);
+  padding-top: 2vh;
+  margin-top: -7vh;
+
+  mask-image: linear-gradient(to top, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
+}
+
+#scrollbike {
+  transition: transform 0.25s ease;
+}
+
+/*
+
+.section-separator.last {
+
+ 
+  background-image: var(--img);
+  background-repeat: repeat; 
+  background-size: auto var(--sep-height);
+  transform: translateY(0); 
+
+} */
+
+/* separator */
+.section-separator {
+  --sep-height: 180px; /* height of the separator image */
+  --img: url("/assets/images/separator.png"); /* adjust path */
+
+  position: relative;
+  height: var(--sep-height);
+  margin-top: calc(-1 * var(--sep-height));
+  transform: translateY(calc(var(--sep-height) / 2)); /* move it down by half its height */
+  overflow: visible;
+  z-index: 1;
+
+  /* keep it transparent so the page background doesn't fight the sections */
+  background: transparent;
+
+  /* draw the wave image centered, full width */
+  background-image: var(--img);
+  background-repeat: repeat; /* Make the background repeat in x direction */
+  background-size: auto var(--sep-height);
+  
+
+  display: grid;
+  place-items: center;
+  pointer-events: none; /* separator doesn't block clicks */
+}
+
+.section-separator__title {
+  pointer-events: auto; /* but the title can still be selectable/clickable if needed */
+  margin: 0;
+  padding: 0.35em 0.9em;
+
+  /* readable over busy image */
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  border-radius: 999px;
+
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
