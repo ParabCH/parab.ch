@@ -189,7 +189,14 @@
   document.addEventListener("DOMContentLoaded", function () {
     let lang = "en";
     try {
-      lang = localStorage.getItem("parab-lang") || "en";
+      // CUSTOM LANGUAGE SELECTOR
+      if (window.location.search === "?lang=de") {
+        lang = "de";
+      } else if (window.location.search === "?lang=en") {
+        lang = "en";
+      } else {
+        lang = localStorage.getItem("parab-lang") || "en";
+      }
     } catch (e) {
       /* ignore */
     }
