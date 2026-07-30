@@ -121,7 +121,7 @@
       "PhD-Kandidat David Elminger<br />Rewriting the Psychedelic History",
     "lec-12-10-title": "<strong>Vorlesung am Montag, 12.10.2026&nbsp;</strong>",
     "lec-12-10-body":
-      "PhD-Kandidatin Anna Müller<br />Titel wird noch bekannt gegeben",
+      "PhD-Kandidatin Anna Müller TBD<br />Titel wird noch bekannt gegeben",
     "lec-19-10-title": "<strong>Vorlesung am Montag, 19.10.2026&nbsp;</strong>",
     "lec-19-10-body":
       "Prof. Dr. Linda Simmler<br />Neurowissenschaft der Psychedelika",
