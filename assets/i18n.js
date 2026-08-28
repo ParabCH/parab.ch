@@ -87,6 +87,12 @@
       "<strong>Weitere Mitglieder des Swiss Psychedelic Student Network</strong>",
     "related-orgs-title": "<strong>Verwandte Organisationen</strong>",
 
+    // index.html – legal notice
+    "impressum-kicker": "PARAB / Impressum",
+    "impressum-title": "<strong>Impressum</strong>",
+    "impressum-contact-title": "Kontaktpersonen",
+    "impressum-website-title": "Website",
+
     // LSHS2026.html – header
     "lshs-title": "<strong>Unsere Vorlesungsreihe Herbst 2026</strong>",
     "lshs-intro":

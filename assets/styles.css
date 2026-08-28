@@ -11,6 +11,86 @@
   padding: 120px 0 !important;
 }
 
+.impressum-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.impressum-section::before {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid rgba(31, 99, 99, 0.22);
+  border-radius: 50%;
+  content: "";
+}
+
+.impressum-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+
+.impressum-logo img {
+  position: relative;
+  max-width: 22rem;
+  filter: drop-shadow(0 1rem 1.5rem rgba(31, 99, 99, 0.16));
+}
+
+.impressum-kicker {
+  margin-bottom: 0.75rem;
+  color: rgb(31, 99, 99);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.impressum-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(31, 99, 99, 0.3);
+}
+
+.impressum-group h2 {
+  margin-bottom: 0.75rem;
+  color: rgb(31, 99, 99);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.impressum-group address {
+  margin: 0;
+  font-style: normal;
+  line-height: 1.55;
+}
+
+.impressum-group a {
+  display: inline-block;
+  color: inherit;
+  font-size: clamp(0.7rem, 2.2vw, 1rem);
+  white-space: nowrap;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 767px) {
+  .impressum-logo {
+    padding: 0 3rem 2rem;
+  }
+
+  .impressum-details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 .bike-wrapper {
   position: sticky;
   height: 7vh;
