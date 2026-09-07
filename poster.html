@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PARAB | Psychedelic Awareness &amp; Research Association Basel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: rgb(143, 224, 218);
+      --teal: rgb(143, 224, 218);
+      --pale-teal: rgb(199, 237, 237);
+      --deep-teal: rgb(31, 99, 99);
+      --paper: rgb(255, 163, 174);
+      --ink: #000000;
+    }
+
+    @page {
+      size: A3 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .poster {
+      position: relative;
+      width: 297mm;
+      min-height: 420mm;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 18mm 18mm 14mm;
+      background: var(--paper);
+    }
+
+    .poster::before,
+    .poster::after {
+      position: absolute;
+      z-index: 0;
+      content: "";
+      border-radius: 50%;
+      transform: rotate(-18deg);
+      pointer-events: none;
+    }
+
+    .poster::before {
+      top: -46mm;
+      right: -30mm;
+      width: 145mm;
+      height: 82mm;
+      background: var(--teal);
+      box-shadow: -50mm 20mm 0 -9mm var(--pale-teal), -94mm 6mm 0 -28mm var(--accent);
+    }
+
+    .poster::after {
+      bottom: -42mm;
+      left: -35mm;
+      width: 150mm;
+      height: 78mm;
+      background: var(--pale-teal);
+      box-shadow: 52mm 18mm 0 -12mm var(--teal), 104mm 4mm 0 -30mm var(--accent);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .masthead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12mm;
+      padding-bottom: 9mm;
+      border-bottom: 1.5mm solid var(--deep-teal);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 5mm;
+    }
+
+    .brand-name {
+      max-width: 112mm;
+      color: var(--deep-teal);
+      font-size: 8mm;
+      font-weight: 700;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .edition {
+      color: var(--deep-teal);
+      font-size: 5mm;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10mm;
+      align-items: center;
+      padding: 14mm 0 10mm;
+      text-align: center;
+    }
+
+    .hero h1 {
+      max-width: 220mm;
+      margin-right: auto;
+      margin-left: auto;
+      margin: 0;
+      color: var(--deep-teal);
+      font-family: "Libre Baskerville", serif;
+      font-size: 27mm;
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--accent);
+    }
+
+    .hero-copy {
+      margin: 7mm 0 0;
+      font-size: 6mm;
+      line-height: 1.35;
+    }
+
+    .hero-image {
+      width: 112mm;
+      height: 112mm;
+      overflow: hidden;
+      border: 1.8mm solid var(--teal);
+      border-radius: 50%;
+      background: var(--pale-teal);
+      box-shadow: 6mm 6mm 0 var(--accent);
+      margin: 0 auto;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      padding: 14mm;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .strap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8mm;
+      margin: 4mm 0 10mm;
+      padding: 7mm 9mm;
+      border-radius: 8mm;
+      background: var(--pale-teal);
+      color: var(--deep-teal);
+      font-size: 7mm;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    .strap strong {
+      color: var(--ink);
+      font-family: "Libre Baskerville", serif;
+      font-size: 9mm;
+    }
+
+    .programme {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 10mm;
+      padding: 9mm 0;
+      background: var(--pale-teal);
+      border-top: 1.2mm solid var(--deep-teal);
+      border-bottom: 1.2mm solid var(--deep-teal);
+    }
+
+    .programme h2 {
+      margin: 0 0 5mm;
+      color: var(--deep-teal);
+      font-family: "Libre Baskerville", serif;
+      font-size: 12mm;
+      line-height: 1;
+    }
+
+    .programme p {
+      max-width: 155mm;
+      margin: 0;
+      font-size: 5.2mm;
+      line-height: 1.4;
+    }
+
+    .facts {
+      display: grid;
+      gap: 4mm;
+      align-content: start;
+    }
+
+    .fact {
+      padding: 4mm 5mm;
+      border-left: 2mm solid var(--accent);
+      background: rgba(143, 224, 218, 0.35);
+      font-size: 5.3mm;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 10mm;
+      align-items: end;
+      padding-top: 8mm;
+    }
+
+    .callout {
+      display: block;
+      padding: 8mm;
+      border-radius: 7mm;
+      background: var(--accent);
+    }
+
+    .callout h2 {
+      margin: 0 0 3mm;
+      color: var(--deep-teal);
+      font-family: "Libre Baskerville", serif;
+      font-size: 10mm;
+      line-height: 1;
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 5mm;
+      line-height: 1.3;
+    }
+
+    .qr-row {
+      display: flex;
+      justify-content: space-around;
+      gap: 10mm;
+    }
+
+    .qr-card {
+      display: grid;
+      justify-items: center;
+      gap: 2.5mm;
+      color: var(--deep-teal);
+      font-size: 4.5mm;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .qr-card img {
+      width: 45mm;
+      height: 45mm;
+      padding: 2.5mm;
+      border-radius: 3mm;
+      background: #fff;
+    }
+
+    .url {
+      margin-top: 5mm;
+      color: var(--deep-teal);
+      font-size: 4.5mm;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 900px) {
+      .poster {
+        width: 100%;
+        min-height: auto;
+        padding: 8vw;
+      }
+
+      .masthead,
+      .hero,
+      .programme,
+      .footer {
+        grid-template-columns: 1fr;
+      }
+
+      .masthead {
+        display: grid;
+      }
+
+      .edition {
+        text-align: left;
+      }
+
+      .hero h1 {
+        font-size: clamp(3rem, 15vw, 7rem);
+      }
+
+      .qr-row {
+        justify-content: flex-start;
+      }
+
+    }
+
+    @media print {
+      body {
+        background: none;
+      }
+
+      .poster {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="poster">
+    <div class="content">
+      <header class="masthead">
+        <div class="brand">
+          <div class="brand-name">Psychedelic Awareness &amp; Research Association Basel</div>
+        </div>
+        <div class="edition">Research<br />Education<br />Community</div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Curious minds.<span>Open questions.</span></h1>
+          <p class="hero-copy">PARAB connects people who want to understand psychedelics through careful research, honest conversation, and public education.</p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/PARAB-Logo.webp" alt="PARAB logo" />
+        </div>
+      </section>
+
+      <div class="strap"><strong>Join the conversation.</strong> Learn, question, connect.</div>
+
+      <section class="programme">
+        <div>
+          <h2>Lecture series<br />Autumn 2026</h2>
+          <p>Discover current research and developments in psychedelic science, from neurobiology and pharmacology to clinical applications, chemistry, history, and law.</p>
+        </div>
+        <div class="facts">
+          <div class="fact">Mondays<br />17:15&ndash;18:15</div>
+          <div class="fact">Department of Pharmaceutical Sciences<br />Klingelbergstrasse 50, Basel</div>
+          <div class="fact">Open to curious minds</div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="callout">
+          <div>
+            <h2>Find PARAB</h2>
+            <p>Follow the programme, meet the community, and stay connected with psychedelic awareness and research in Basel.</p>
+            <div class="url">parab.ch</div>
+          </div>
+        </div>
+        <div class="qr-row">
+          <div class="qr-card">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fparab.ch%2F" alt="QR code for the PARAB website" />
+            <span>Main website</span>
+          </div>
+          <div class="qr-card">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fparab.ch%2FLSHS2026.html" alt="QR code for the lecture series" />
+            <span>Lecture series</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+</body>
+
+</html>
