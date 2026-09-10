@@ -38,7 +38,7 @@
     .poster {
       position: relative;
       width: 297mm;
-      min-height: 420mm;
+      height: 420mm;
       overflow: hidden;
       margin: 0 auto;
       padding: 18mm 18mm 14mm;
@@ -154,6 +154,17 @@
       margin: 0 auto;
     }
 
+    .hero-logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14mm;
+    }
+
+    .hero-qr {
+      flex: 0 0 45mm;
+    }
+
     .hero-image img {
       width: 100%;
       height: 100%;
@@ -187,10 +198,10 @@
       display: grid;
       grid-template-columns: 1.25fr 0.75fr;
       gap: 10mm;
-      padding: 9mm 0;
+      margin: 0 0 10mm;
+      padding: 9mm;
+      border-radius: 8mm;
       background: var(--pale-teal);
-      border-top: 1.2mm solid var(--deep-teal);
-      border-bottom: 1.2mm solid var(--deep-teal);
     }
 
     .programme h2 {
@@ -312,6 +323,15 @@
         font-size: clamp(3rem, 15vw, 7rem);
       }
 
+      .hero-logo-row {
+        flex-wrap: wrap;
+        gap: 8vw;
+      }
+
+      .hero-qr {
+        flex-basis: 36vw;
+      }
+
       .qr-row {
         justify-content: flex-start;
       }
@@ -345,8 +365,18 @@
           <h1>Curious minds.<span>Open questions.</span></h1>
           <p class="hero-copy">PARAB connects people who want to understand psychedelics through careful research, honest conversation, and public education.</p>
         </div>
-        <div class="hero-image">
-          <img src="assets/images/PARAB-Logo.webp" alt="PARAB logo" />
+        <div class="hero-logo-row">
+          <div class="qr-card hero-qr">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fparab.ch%2F" alt="QR code for the PARAB website" />
+            <span>Main website</span>
+          </div>
+          <div class="hero-image">
+            <img src="assets/images/PARAB-Logo.webp" alt="PARAB logo" />
+          </div>
+          <div class="qr-card hero-qr">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fparab.ch%2FLSHS2026.html" alt="QR code for the lecture series" />
+            <span>Lecture series</span>
+          </div>
         </div>
       </section>
 
@@ -360,7 +390,7 @@
         <div class="facts">
           <div class="fact">Mondays<br />17:15&ndash;18:15</div>
           <div class="fact">Department of Pharmaceutical Sciences<br />Klingelbergstrasse 50, Basel</div>
-          <div class="fact">Open to curious minds</div>
+          <div class="fact">1 ECTS for Uni Basel Students</div>
         </div>
       </section>
 
@@ -370,16 +400,6 @@
             <h2>Find PARAB</h2>
             <p>Follow the programme, meet the community, and stay connected with psychedelic awareness and research in Basel.</p>
             <div class="url">parab.ch</div>
-          </div>
-        </div>
-        <div class="qr-row">
-          <div class="qr-card">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fparab.ch%2F" alt="QR code for the PARAB website" />
-            <span>Main website</span>
-          </div>
-          <div class="qr-card">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fparab.ch%2FLSHS2026.html" alt="QR code for the lecture series" />
-            <span>Lecture series</span>
           </div>
         </div>
       </footer>
