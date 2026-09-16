@@ -11,6 +11,43 @@
   padding: 120px 0 !important;
 }
 
+.lecture-location {
+  position: relative;
+  margin: 2.5rem auto 0 !important;
+  padding: 1.5rem 1.75rem 1.5rem 2rem;
+  max-width: 52rem;
+  border: 2px solid rgb(31, 99, 99);
+  border-radius: 0;
+  background: rgb(199, 237, 237);
+  box-shadow: 0.5rem 0.5rem 0 rgb(255, 163, 174);
+  color: rgb(31, 99, 99);
+  text-align: left;
+  line-height: 1.45;
+}
+
+.lecture-location::before {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgb(31, 99, 99);
+  content: "LOCATION & TIME";
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.lecture-location strong {
+  display: block;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .lecture-location {
+    margin-top: 2rem !important;
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+    box-shadow: 0.35rem 0.35rem 0 rgb(255, 163, 174);
+  }
+}
+
 .impressum-section {
   position: relative;
   overflow: hidden;

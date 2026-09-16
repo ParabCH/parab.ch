@@ -106,9 +106,9 @@
       "chemische Perspektiven sowie ihren historischen und rechtlichen Kontext.",
     "lshs-coursedir": "Vorlesungsverzeichnis der Universität Basel",
     "lshs-location":
-      "<strong>Alle unsere Vorlesungen in diesem Herbst finden am Departement " +
-      "Pharmazeutische Wissenschaften, Klingelbergstrasse 50, 4056 Basel von " +
-      "17:15 bis 18:15 Uhr statt</strong>",
+      "<strong>Alle Vorlesungen finden montags von 17:15 bis 18:15 Uhr statt. " +
+      "Der Veranstaltungsort ist das Biozentrum, HS U1.141 " +
+      "(am 28.09. HS U1.101), Spitalstrasse 41, 4056 Basel.</strong>",
 
     // LSHS2026.html – lecture cards
     "lec-14-09-title": "<strong>Vorlesung am Montag, 14.09.2026&nbsp;</strong>",
