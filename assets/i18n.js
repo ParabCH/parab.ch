@@ -120,11 +120,10 @@
       "mit Fokus auf Klinische Pharmakologie & Toxikologie",
     "lec-28-09-title": "<strong>Vorlesung am Montag, 28.09.2026&nbsp;</strong>",
     "lec-28-09-body":
-      "PhD-Kandidat Livio Erne, PhD-Kandidat Jan Valenta, PhD-Kandidat " +
-      "Hector Taylor<br />Titel werden noch bekannt gegeben",
+      "PhD-Kandidaten Livio Erne, Jan Valenta, und Hector Taylor<br />Präsentieren ihre bisherige Forschung und Arbeiten",
     "lec-05-10-title": "<strong>Vorlesung am Montag, 05.10.2026&nbsp;</strong>",
     "lec-05-10-body":
-      "PhD-Kandidat David Elminger<br />Rewriting the Psychedelic History",
+      "PhD-Kandidat David Wennberg<br />Beyond Stigma and Hype - The History of Psychedelic Research and its Lessons for Today",
     "lec-12-10-title": "<strong>Vorlesung am Montag, 12.10.2026&nbsp;</strong>",
     "lec-12-10-body":
       "PhD-Kandidatin Anna Müller TBD<br />Titel wird noch bekannt gegeben",
