@@ -131,7 +131,7 @@
     "lec-19-10-body":
       "Prof. Dr. Linda Simmler<br />Neurowissenschaft der Psychedelika",
     "lec-02-11-title": "<strong>Vorlesung am Montag, 02.11.2026&nbsp;</strong>",
-    "lec-02-11-body": "Johannes Jungwirt<br />Titel wird noch bekannt gegeben",
+    "lec-02-11-body": "Johannes Jungwirthh<br />Titel wird noch bekannt gegeben",
     "lec-09-11-title": "<strong>Vorlesung am Montag, 09.11.2026&nbsp;</strong>",
     "lec-09-11-body": "Manvir Singh<br />Titel wird noch bekannt gegeben",
     "lec-16-11-title": "<strong>Vorlesung am Montag, 16.11.2026&nbsp;</strong>",
